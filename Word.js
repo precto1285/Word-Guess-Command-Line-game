@@ -16,3 +16,16 @@
 
 // `Word.js` *should only* require `Letter.js`
 
+
+var letter = require('./letter.js');
+
+function Word(target){
+    this.target = target;
+    this.lets = [];
+    this.found = false;
+    this.getLet = function(){
+        for (var i = 0; i < this.target.length; i++){
+            
+        }
+    }
+}
