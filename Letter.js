@@ -29,4 +29,4 @@ const Letter = function(ltr){
 };
 
 //export the constructor
-module.exports = letter;
+module.exports = Letter;
