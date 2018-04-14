@@ -17,15 +17,33 @@
 // `Word.js` *should only* require `Letter.js`
 
 
-var letter = require('./letter.js');
+var Letter = require('./letter.js');
 
-function Word(target){
-    this.target = target;
-    this.lets = [];
+function Word(word){
+    this.word = word;
+    this.letters = [];
     this.found = false;
     this.getLet = function(){
-        for (var i = 0; i < this.target.length; i++){
-            
+        for (var i = 0l i < this.word.length; i++){
+            var currentLetter = new Letter(this.word[i]);
+            this.letters.push(currentLetter);
         }
-    }
+    };
+    this.show = function(){
+        for(var i = 0; i < this.letters.length; i++){
+            this.letters[i].letterRender;
+        }
+    };
+    this.checkGuess = function(guess){
+        guess = guess.toLowerCase();
+        for(var i = 0; i < this.letters.length; i++) {
+            var currentLtr = this.letters[i];
+            if (currentLtr === guess){
+                currentLetter.appear = true;
+            }
+        }
+    };
 }
+
+//export the constructor
+module.exports = Word;
