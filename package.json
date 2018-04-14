@@ -1,0 +1,23 @@
+{
+  "name": "word-guess-command-line-game",
+  "version": "1.0.0",
+  "description": "Assignment Week 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/precto1285/Word-Guess-Command-Line-game.git"
+  },
+  "author": "Philippe Recto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/precto1285/Word-Guess-Command-Line-game/issues"
+  },
+  "homepage": "https://github.com/precto1285/Word-Guess-Command-Line-game#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "prompt": "^1.0.0"
+  }
+}
