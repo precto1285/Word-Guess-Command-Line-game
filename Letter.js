@@ -20,8 +20,8 @@
 // **HINT:** Write `Letter.js` first and test it on its own before moving on, then do the same thing with `Word.js`
 
 
-const Letter = function(let){
-    this.character = let;
+const Letter = function(ltr){
+    this.character = ltr;
     this.appear = false;
     this.letterRender = function(){
         return !(this.appear) ?" _": this.charac;
